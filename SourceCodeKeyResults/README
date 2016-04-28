@@ -1,0 +1,36 @@
+File: README
+
+Authors:
+	Jacob C. Levine (4502)
+	Jon Allured (4502)
+
+Project: Temperature map of the galactic plane based on infrared wavelength intensity across 5 bands
+
+
+FILES:  
+
+practiceData:  
+	a directory that contains a small subset of the dataset to practice with as well as some output files ("newFitsFileXXX.fits" where XXX is the wavelength)
+
+
+fitsTest.py:  
+	used to learn how to work with the FITS file format
+
+
+scipyTest.py:  
+	used to learn how the curve_fit function works and to test it with both a simple equation and the blackbody radiation equation
+
+
+createOutputFiles.py:  
+	creates one new FITS file with the proper size array and populated by NaNs (Not-a-Numbers).  Takes 'wavelength' as an argument, where wavelength is one of the following integers: 70, 160, 250, 350, or 500.  Needs to be run for each wavelength to generate all 5 output files.  
+
+
+getTemp.py:  
+	for data analysis using curve_fit, we did not end up using this as we could not get usable results from the curve_fit function
+
+
+getMaxIntensities.py: 
+	for data analysis using backup method of finding local max intensites, this is the one we ended up using to generate our results
+
+
+
